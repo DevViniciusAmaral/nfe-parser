@@ -1,0 +1,41 @@
+{
+  "name": "nfe-parser",
+  "version": "1.0.0",
+  "description": "API para processar XML de NF-e",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": "Vinicius Amaral",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/viniciusamaral/nfe-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/viniciusamaral/nfe-parser/issues"
+  },
+  "homepage": "https://github.com/viniciusamaral/nfe-parser#readme",
+  "keywords": [
+    "nfe",
+    "parser",
+    "xml",
+    "json"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup src",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@fastify/multipart": "^8.3.0",
+    "fastify": "^4.28.1",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.4",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "typescript": "^5.5.4"
+  }
+}
