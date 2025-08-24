@@ -1,17 +1,4 @@
-export enum DocumentType {
-  CPF = "CPF",
-  CNPJ = "CNPJ",
-}
-
-export enum NfeType {
-  ENTRADA = "Entrada",
-  SAIDA = "Saída",
-}
-
-export enum NfeModel {
-  NFE = "55",
-  NFCE = "65",
-}
+import { DocumentType, NfeModel, NfeType } from "../enums/danfe-enums";
 
 export interface NfeResponse {
   details: {

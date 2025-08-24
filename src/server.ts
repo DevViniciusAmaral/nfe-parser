@@ -1,12 +1,12 @@
 import { fastify } from "fastify";
 import { fastifyMultipart } from "@fastify/multipart";
-import { uploadNfe } from "./controllers/nfeController";
+import { Routes } from "./routes";
 
 export const createServer = () => {
   const app = fastify();
-  app.register(fastifyMultipart);
 
-  app.post("/", uploadNfe);
+  app.register(fastifyMultipart);
+  app.register(Routes);
 
   return app;
 };
