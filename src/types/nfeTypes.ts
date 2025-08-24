@@ -14,10 +14,10 @@ export enum NfeModel {
 }
 
 export interface NfeResponse {
-  invoiceDetails: {
+  details: {
     accessKey: string;
     issueDate: string;
-    nfNumber: string;
+    number: string;
     series: string;
     protocol: string;
     operationNature: string;

@@ -11,10 +11,10 @@ export async function processNfe(xmlContent: string): Promise<NfeResponse> {
   }
 
   const formattedJson: NfeResponse = {
-    invoiceDetails: {
+    details: {
       accessKey: nfe._attributes?.Id?.replace('NFe', '') || "",
       issueDate: nfe.ide?.dhEmi?._text || "",
-      nfNumber: nfe.ide?.nNF?._text || "",
+      number: nfe.ide?.nNF?._text || "",
       series: nfe.ide?.serie?._text || "",
       protocol: nfeProc?.protNFe?.infProt?.nProt?._text || "",
       operationNature: nfe.ide?.natOp?._text || "",
