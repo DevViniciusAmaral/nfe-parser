@@ -29,7 +29,6 @@ nfe-parser/
 ├── docs/
 │   ├── README.pt-BR.md
 │   ├── README.en.md
-│   └── index.html
 ├── package.json
 ├── tsconfig.json
 ```
@@ -102,10 +101,10 @@ curl -X POST http://localhost:3000 -F "file=@/path/to/your/nfe.xml"
 
 ```json
 {
-  "invoiceDetails": {
+  "details": {
     "accessKey": "35230812345678901234567890123456789012345678",
     "issueDate": "2023-08-01T10:00:00-03:00",
-    "nfNumber": "123456",
+    "number": "123456",
     "series": "001",
     "protocol": "123456789012345",
     "operationNature": "Venda",
